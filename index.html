@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Listing Assistant — Home</title>
+  <meta name="description" content="AI Listing Assistant — fill Meesho & Flipkart listings from product photos. Inventory Status with your Google Sheet." />
+  <style>
+    :root { --text:#f1f5f9; --muted:#94a3b8; --border:rgba(148,163,184,.2); }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; min-height: 100vh; font-family: "Segoe UI", system-ui, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(900px 500px at 0% -10%, rgba(59,130,246,.35), transparent 55%),
+        radial-gradient(700px 400px at 100% 0%, rgba(139,92,246,.3), transparent 50%),
+        radial-gradient(600px 300px at 50% 100%, rgba(251,191,36,.12), transparent 45%),
+        linear-gradient(165deg, #070b16, #0f172a);
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 48px 20px 80px; }
+    nav { display: flex; flex-wrap: wrap; gap: 14px; justify-content: flex-end; margin-bottom: 36px; }
+    nav a { color: #c7d2fe; text-decoration: none; font-size: 13px; font-weight: 650; }
+    nav a:hover { color: #fcd34d; }
+    .hero {
+      background: rgba(255,255,255,.06); border: 1px solid var(--border);
+      border-radius: 20px; padding: 36px 28px;
+      backdrop-filter: blur(16px);
+      box-shadow: 0 16px 48px rgba(0,0,0,.3), inset 0 1px 0 rgba(255,255,255,.05);
+    }
+    .mark {
+      width: 56px; height: 56px; border-radius: 16px;
+      background: linear-gradient(135deg, #2563eb, #7c3aed 55%, #f59e0b);
+      display: grid; place-items: center; font-size: 24px; font-weight: 800; color: #fff;
+      box-shadow: 0 8px 24px rgba(99,102,241,.4); margin-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 10px; font-size: clamp(26px, 4vw, 34px); font-weight: 800;
+      background: linear-gradient(90deg, #f8fafc, #c4b5fd, #fcd34d);
+      -webkit-background-clip: text; background-clip: text; color: transparent;
+    }
+    .lead { color: var(--muted); font-size: 16px; line-height: 1.55; max-width: 560px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-top: 28px; }
+    .card {
+      background: rgba(2,6,23,.45); border: 1px solid var(--border);
+      border-radius: 14px; padding: 16px;
+    }
+    .card h3 { margin: 0 0 6px; font-size: 14px; color: #e0e7ff; }
+    .card p { margin: 0; font-size: 13px; color: var(--muted); line-height: 1.45; }
+    .cta {
+      display: inline-block; margin-top: 24px; padding: 12px 20px; border-radius: 12px;
+      background: linear-gradient(135deg, #3b82f6, #7c3aed 55%, #f59e0b);
+      color: #fff; font-weight: 700; text-decoration: none; font-size: 14px;
+      box-shadow: 0 8px 22px rgba(124,58,237,.35);
+    }
+    footer { margin-top: 40px; font-size: 12px; color: var(--muted); }
+    footer a { color: #a5b4fc; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+    <div class="hero">
+      <div class="mark">AI</div>
+      <h1>AI Listing Assistant</h1>
+      <p class="lead">
+        Fill Meesho &amp; Flipkart listings from product photos — in your voice, under your review.
+        No invented specs. Use your own API keys (Gemini, OpenAI, Claude, or Grok).
+        Inventory Status connects to <strong>your</strong> Google Sheet.
+      </p>
+      <div class="grid">
+        <div class="card">
+          <h3>Listings</h3>
+          <p>Detect product images and autofill marketplace fields step by step.</p>
+        </div>
+        <div class="card">
+          <h3>Inventory</h3>
+          <p>Track sales, party rates, bills — managed with AI + Sheets.</p>
+        </div>
+        <div class="card">
+          <h3>Your keys</h3>
+          <p>No shared API keys. You control Gemini / OpenAI access on your device.</p>
+        </div>
+      </div>
+      <a class="cta" href="mailto:sgtraders542@gmail.com">Contact support</a>
+    </div>
+    <footer>
+      Support: <a href="mailto:sgtraders542@gmail.com">sgtraders542@gmail.com</a>
+      · Official: <a href="mailto:officialailistingassistant@gmail.com">officialailistingassistant@gmail.com</a><br />
+      <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
+    </footer>
+  </div>
+</body>
+</html>
