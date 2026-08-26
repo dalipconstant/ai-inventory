@@ -50,9 +50,10 @@
     .cta {
       display: inline-block; margin-top: 24px; padding: 12px 20px; border-radius: 12px;
       background: linear-gradient(135deg, #3b82f6, #7c3aed 55%, #f59e0b);
-      color: #fff; font-weight: 700; text-decoration: none; font-size: 14px;
-      box-shadow: 0 8px 22px rgba(124,58,237,.35);
+      color: #fff !important; font-weight: 700; text-decoration: none; font-size: 14px;
+      box-shadow: 0 8px 22px rgba(124,58,237,.35); border: none; cursor: pointer;
     }
+    .cta:hover { filter: brightness(1.08); }
     footer { margin-top: 40px; font-size: 12px; color: var(--muted); }
     footer a { color: #a5b4fc; }
   </style>
@@ -87,12 +88,30 @@
           <p>No shared API keys. You control Gemini / OpenAI access on your device.</p>
         </div>
       </div>
-      <a class="cta" href="mailto:sgtraders542@gmail.com">Contact support</a>
+      <a class="cta"
+         id="contactSupport"
+         href="mailto:supportailistingassistant@gmail.com?subject=Inventory%20Manager%20AI%20Support">
+        Contact support
+      </a>
     </div>
     <footer>
-      Support: <a href="mailto:sgtraders542@gmail.com">sgtraders542@gmail.com</a><br />
+      Support:
+      <a href="mailto:supportailistingassistant@gmail.com">supportailistingassistant@gmail.com</a>
+      · Official:
+      <a href="mailto:officialailistingassistant@gmail.com">officialailistingassistant@gmail.com</a><br />
       <a href="privacy.html">Privacy Policy</a> · <a href="terms.html">Terms of Service</a>
     </footer>
   </div>
+  <script>
+    document.getElementById("contactSupport").addEventListener("click", function (e) {
+      var url = "mailto:supportailistingassistant@gmail.com?subject=" +
+        encodeURIComponent("Inventory Manager AI Support");
+      window.location.href = url;
+      // Fallback if mail client blocked
+      setTimeout(function () {
+        window.open(url, "_self");
+      }, 100);
+    });
+  </script>
 </body>
 </html>
